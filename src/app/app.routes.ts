@@ -10,13 +10,16 @@ import { MapComponent } from './components/map/map.component';
 export const routes: Routes = [
   { path: 'sign-up', component: AuthSignUpComponent },
   { path: 'log-in', component: AuthLogInComponent },
+
   {
-    path: 'note-list',
+    path: '',
     canActivate: [authGuard],
-    component: NoteListComponent,
+    children: [
+      { path: '', component: NoteListComponent },
+      { path: 'note-list', component: NoteListComponent },
+      { path: 'chart', component: ChartComponent },
+      { path: 'calendar', component: CalendarComponent },
+      { path: 'map', component: MapComponent },
+    ],
   },
-  { path: '', component: NoteListComponent },
-  { path: 'chart', component: ChartComponent },
-  { path: 'calendar', component: CalendarComponent },
-  { path: 'map', component: MapComponent },
 ];

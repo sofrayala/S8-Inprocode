@@ -12,21 +12,19 @@ export const authGuard: CanActivateFn = async () => {
   const { data } = await authService().session();
 
   if (!data.session) {
-    router.navigateByUrl('/log-in');
+    return router.createUrlTree(['/log-in']);
   }
-  console.log(!!data.session);
 
-  return !!data.session;
+  return true;
 };
 
 export const publicGuard: CanActivateFn = async () => {
   const router = routerInjection();
-
   const { data } = await authService().session();
 
   if (data.session) {
-    router.navigateByUrl('/');
+    return router.createUrlTree(['/']);
   }
 
-  return !data.session;
+  return true;
 };
