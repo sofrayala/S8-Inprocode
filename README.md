@@ -6,7 +6,7 @@
 
 ## 📄 Descripción
 
-Este repositorio contiene una aplicación **Travel Journal** desarrollada con **Angular 19**. Permite a los usuarios crear un log de todos sus viajes, y ver charts con estadisticas del rating de cada viaje, un calendario con las fechas de los viajes y un mapa con un marker en cada lugar visitado.
+Este repositorio contiene una aplicación **Travel Journal** desarrollada con **Angular 19**. Permite a los usuarios crear un log de todos sus viajes, y ver charts con estadisticas del rating de cada viaje, un calendario con las fechas de los viajes y un mapa con un marker en cada lugar visitado. Para acceder al contendo debes crear una cuenta y acceder a ella.
 
 ## ✨ Características
 
@@ -69,7 +69,7 @@ npm i @angular/cli
 
 ## ▶️ Ejecución
 
-Antes de iniciar la aplicación, debes configurar las credenciales de Firebase ([guía aquí](https://firebase.google.com/docs/web/setup)) y crear una cuenta en la pagina oficial de la API de TMDB: https://www.themoviedb.org/. En la carpeta `environments/` encontrarás un archivo `environment.example.ts`. Sigue estos pasos:
+Antes de iniciar la aplicación, debes configurar las credenciales de Supabase (https://supabase.com/) y crear una cuenta en la pagina oficial de la API de Mapbox: https://www.mapbox.com/mapbox-studio. En la carpeta `environments/` encontrarás un archivo `environment.example.ts`. Sigue estos pasos:
 
 1. Abre el archivo environment.example.ts, que tiene la siguiente estructura:
 
