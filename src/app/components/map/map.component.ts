@@ -11,7 +11,7 @@ import {
 import { isPlatformBrowser, CommonModule } from '@angular/common';
 import { PLATFORM_ID } from '@angular/core';
 import { NavBarComponent } from '../nav-bar/nav-bar.component';
-import { environment } from '../../../environments/environment';
+import { environment } from '../../../environments/environment.development';
 import { NotesService } from '../../notes/data-access/notes.service';
 
 const INITIAL_CENTER: [number, number] = [2.203, 41.3976];
@@ -66,7 +66,7 @@ export class MapComponent implements OnDestroy {
       const mapboxgl = (await import('mapbox-gl')).default;
 
       this.map = new mapboxgl.Map({
-        accessToken: environment.mapBoxAccessToken,
+        accessToken: environment.MAP_BOX_TOKEN,
         container: this.mapContainer.nativeElement,
         center: this.center(),
         zoom: this.zoom(),

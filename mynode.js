@@ -5,9 +5,9 @@ const checkSign = "\u{2705}";
 const dotenv = require("dotenv").config({ path: "src/.env" });
 
 const envFile = `export const environment = {
-    supabaseUrl: '${process.env.supabaseUrl}',
-    supabaseKey: '${process.env.supabaseKey}',
-    mapBoxAccessToken: '${process.env.mapBoxAccessToken}',
+    SUPABASE_URL: '${process.env.SUPABASE_URL}',
+    SUPABASE_KEY: '${process.env.SUPABASE_KEY}',
+    MAP_BOX_TOKEN: '${process.env.MAP_BOX_TOKEN}',
 };
 `;
 const targetPath = path.join(
