@@ -1,0 +1,64 @@
+<header class="burger-menu">
+  <button
+    class="burger"
+    id="burger-button"
+    matIconButton
+    [matMenuTriggerFor]="menu"
+    aria-label="Example icon-button with a menu"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <p [routerLink]="['/note-list']">Table</p>
+    </button>
+    <button mat-menu-item>
+      <p [routerLink]="['/map']">Map</p>
+    </button>
+    <button mat-menu-item>
+      <p [routerLink]="['/chart']">Charts</p>
+    </button>
+    <button mat-menu-item>
+      <p [routerLink]="['/calendar']">Calendar</p>
+    </button>
+    <button mat-menu-item>
+      <p [routerLink]="['/sign-up']">Sign up</p>
+    </button>
+    <button mat-menu-item>
+      <p [routerLink]="['/log-in']">Log in</p>
+    </button>
+    <button mat-menu-item>
+      <button
+        type="button"
+        (click)="logOut()"
+        (keyup.enter)="logOut()"
+        class="nav-action-btn"
+      >
+        Log out
+      </button>
+    </button>
+  </mat-menu>
+</header>
+
+<!-- Desktop menu -->
+<section class="desktop-navbar">
+  <div>
+    <p [routerLink]="['/note-list']">Table</p>
+    <p [routerLink]="['/map']">Map</p>
+    <p [routerLink]="['/chart']">Charts</p>
+    <p [routerLink]="['/calendar']">Calendar</p>
+  </div>
+
+  <div>
+    <p [routerLink]="['/sign-up']">Sign up</p>
+    <p [routerLink]="['/log-in']">Log in</p>
+    <button
+      type="button"
+      (click)="logOut()"
+      (keyup.enter)="logOut()"
+      class="nav-action-btn"
+    >
+      Log out
+    </button>
+  </div>
+</section>

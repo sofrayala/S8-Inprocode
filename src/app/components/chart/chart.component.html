@@ -1,0 +1,88 @@
+<app-nav-bar></app-nav-bar>
+<section>
+  <h1>Bar chart</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+    necessitatibus qui temporibus quisquam numquam! Nobis sequi hic, odio
+    mollitia magnam, sapiente voluptatum dignissimos delectus iusto repellat
+    dolorem animi! Non expedita suscipit incidunt impedit animi molestiae
+    distinctio sed culpa tenetur officiis, magnam vitae unde, laudantium facere?
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius similique
+    officia ab impedit quos velit corporis, sit sequi enim reiciendis dolorum
+    quia voluptates, vero adipisci eum excepturi quisquam, rem voluptatibus
+    ipsum ipsa repudiandae est nostrum. Distinctio tempora aut aliquid ab
+    perspiciatis omnis repudiandae rerum deserunt, ut dolores! Minima temporibus
+    optio autem dolor minus, nobis consequuntur animi reiciendis quia dolorum
+    vel ex recusandae unde nihil eos
+  </p>
+  <!-- bar chart -->
+  <div id="bar-chart-div">
+    <canvas baseChart [data]="chartData" [type]="chartType"> </canvas>
+  </div>
+  <!-- pie chart -->
+  <h1>Pie Chart</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+    necessitatibus qui temporibus quisquam numquam! Nobis sequi hic, odio
+    mollitia magnam, sapiente voluptatum dignissimos delectus iusto repellat
+    dolorem animi! Non expedita suscipit incidunt impedit animi molestiae
+    distinctio sed culpa tenetur officiis, magnam vitae unde, laudantium facere?
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius similique
+    officia ab impedit quos velit corporis, sit sequi enim reiciendis dolorum
+    quia voluptates, vero adipisci eum excepturi quisquam, rem voluptatibus
+    ipsum ipsa repudiandae est nostrum. Distinctio tempora aut aliquid ab
+    perspiciatis omnis repudiandae rerum deserunt, ut dolores! Minima temporibus
+    optio autem dolor minus, nobis consequuntur animi reiciendis quia dolorum
+    vel ex recusandae unde nihil eos
+  </p>
+  <div id="chart-div">
+    <canvas
+      baseChart
+      [data]="pieChartData"
+      [type]="'pie'"
+      [options]="pieChartOptions"
+    ></canvas>
+  </div>
+
+  <!-- sparkline chart -->
+  <h1>Sparkline Chart</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+    necessitatibus qui temporibus quisquam numquam! Nobis sequi hic, odio
+    mollitia magnam, sapiente voluptatum dignissimos delectus iusto repellat
+    dolorem animi! Non expedita suscipit incidunt impedit animi molestiae
+    distinctio sed culpa tenetur officiis, magnam vitae unde, laudantium facere?
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius similique
+    officia ab impedit quos velit corporis, sit sequi enim reiciendis dolorum
+    quia voluptates, vero adipisci eum excepturi quisquam, rem voluptatibus
+    ipsum ipsa repudiandae est nostrum. Distinctio tempora aut aliquid ab
+    perspiciatis omnis repudiandae rerum deserunt, ut dolores! Minima temporibus
+    optio autem dolor minus, nobis consequuntur animi reiciendis quia dolorum
+    vel ex recusandae unde nihil eos
+  </p>
+  <div id="chart-div">
+    <canvas
+      baseChart
+      [data]="sparklineData"
+      [type]="'line'"
+      [options]="sparklineOptions"
+    ></canvas>
+  </div>
+
+  <!-- doughnut -->
+  <h1>Doughnut Chart</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque veniam harum
+    cupiditate maxime provident quasi doloribus modi, mollitia quisquam sapiente
+    ipsa aspernatur recusandae possimus quos obcaecati excepturi aliquam nemo
+    nostrum.
+  </p>
+  <div id="chart-div">
+    <canvas
+      baseChart
+      [data]="doughnutChartData"
+      [type]="'doughnut'"
+      [options]="doughnutChartOptions"
+    ></canvas>
+  </div>
+</section>

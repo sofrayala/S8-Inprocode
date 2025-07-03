@@ -1,0 +1,25 @@
+<app-nav-bar></app-nav-bar>
+<section>
+  <full-calendar [options]="calendarOptions"></full-calendar>
+  @if (a) {
+  <div class="modle-main">
+    <div class="modle-container">
+      <button class="btn-close" (click)="handleCloseBtn()">x</button>
+      <h1>Edit Trip</h1>
+      <label>
+        Destination:
+        <input type="text" [(ngModel)]="editForm.destination" />
+      </label>
+      <label>
+        Start Date:
+        <input type="date" [(ngModel)]="editForm.start_date" />
+      </label>
+      <label>
+        End Date:
+        <input type="date" [(ngModel)]="editForm.end_date" />
+      </label>
+      <button class="btn-submit" (click)="submitEdit()">Submit</button>
+    </div>
+  </div>
+  }
+</section>

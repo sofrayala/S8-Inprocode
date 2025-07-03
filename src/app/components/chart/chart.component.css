@@ -1,0 +1,24 @@
+section {
+  padding: 4rem;
+}
+h1 {
+  font-size: xx-large;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+#chart-div {
+  width: 400px;
+  max-width: 90vw;
+  margin: auto;
+}
+
+#bar-chart-div {
+  width: 600px;
+  max-width: 90vw;
+  margin: auto;
+}
+
+p {
+  margin: 3rem 0rem;
+}
